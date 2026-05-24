@@ -1,0 +1,29 @@
+﻿using System;
+
+namespace UnityEngine.Pool
+{
+	// Token: 0x0200037C RID: 892
+	public class GenericPool<T> where T : class, new()
+	{
+		// Token: 0x06001E91 RID: 7825 RVA: 0x00031942 File Offset: 0x0002FB42
+		public static T Get()
+		{
+			return GenericPool<T>.s_Pool.Get();
+		}
+
+		// Token: 0x06001E92 RID: 7826 RVA: 0x0003194E File Offset: 0x0002FB4E
+		public static PooledObject<T> Get(out T value)
+		{
+			return GenericPool<T>.s_Pool.Get(out value);
+		}
+
+		// Token: 0x06001E93 RID: 7827 RVA: 0x0003195B File Offset: 0x0002FB5B
+		public static void Release(T toRelease)
+		{
+			GenericPool<T>.s_Pool.Release(toRelease);
+		}
+
+		// Token: 0x04000A00 RID: 2560
+		internal static readonly ObjectPool<T> s_Pool = new ObjectPool<T>(() => new T(), null, null, null, true, 10, 10000);
+	}
+}

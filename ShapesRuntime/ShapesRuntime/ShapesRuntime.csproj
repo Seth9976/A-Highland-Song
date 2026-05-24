@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C6042F2-A94C-45E3-914B-64BD0906F47D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shapes</RootNamespace>
+    <AssemblyName>ShapesRuntime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AngularUnit.cs" />
+    <Compile Include="AngularUnitExtensions.cs" />
+    <Compile Include="ArcEndCap.cs" />
+    <Compile Include="ArrayPool.cs" />
+    <Compile Include="ColorStack.cs" />
+    <Compile Include="Cone.cs" />
+    <Compile Include="Cuboid.cs" />
+    <Compile Include="DashExtensions.cs" />
+    <Compile Include="DashSnapping.cs" />
+    <Compile Include="DashSpace.cs" />
+    <Compile Include="DashStyle.cs" />
+    <Compile Include="DashType.cs" />
+    <Compile Include="DashTypeExtensions.cs" />
+    <Compile Include="DestroyOnAssemblyReload.cs" />
+    <Compile Include="DetailLevel.cs" />
+    <Compile Include="Disc.cs" />
+    <Compile Include="DiscGeometry.cs" />
+    <Compile Include="DiscType.cs" />
+    <Compile Include="DiscTypeExtensions.cs" />
+    <Compile Include="DisposableMesh.cs" />
+    <Compile Include="Draw.cs" />
+    <Compile Include="DrawCommand.cs" />
+    <Compile Include="DrawStyle.cs" />
+    <Compile Include="FillSpace.cs" />
+    <Compile Include="FillType.cs" />
+    <Compile Include="IDashable.cs" />
+    <Compile Include="IFillable.cs" />
+    <Compile Include="IMDrawer.cs" />
+    <Compile Include="IMMaterialPool.cs" />
+    <Compile Include="ImmediateModeShapeDrawer.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="LineEndCap.cs" />
+    <Compile Include="LineGeometry.cs" />
+    <Compile Include="ListPool.cs" />
+    <Compile Include="MatrixStack.cs" />
+    <Compile Include="MeshUpdateMode.cs" />
+    <Compile Include="MetaMpb.cs" />
+    <Compile Include="MpbCone.cs" />
+    <Compile Include="MpbCuboid.cs" />
+    <Compile Include="MpbDisc.cs" />
+    <Compile Include="MpbLine.cs" />
+    <Compile Include="MpbPolygon.cs" />
+    <Compile Include="MpbPolyline.cs" />
+    <Compile Include="MpbQuad.cs" />
+    <Compile Include="MpbRectangle.cs" />
+    <Compile Include="MpbRegularPolygon.cs" />
+    <Compile Include="MpbSphere.cs" />
+    <Compile Include="MpbText.cs" />
+    <Compile Include="MpbTorus.cs" />
+    <Compile Include="MpbTriangle.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="OvldDefault.cs" />
+    <Compile Include="OvldGenCallTarget.cs" />
+    <Compile Include="PointPath.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="PolygonPath.cs" />
+    <Compile Include="PolygonTriangulation.cs" />
+    <Compile Include="Polyline.cs" />
+    <Compile Include="PolylineGeometry.cs" />
+    <Compile Include="PolylineJoins.cs" />
+    <Compile Include="PolylineJoinsExtensions.cs" />
+    <Compile Include="PolylinePath.cs" />
+    <Compile Include="PolylinePoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quad.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectPivot.cs" />
+    <Compile Include="RectPivotExtensions.cs" />
+    <Compile Include="RegularPolygon.cs" />
+    <Compile Include="RegularPolygonGeometry.cs" />
+    <Compile Include="RenderPipeline.cs" />
+    <Compile Include="RenderState.cs" />
+    <Compile Include="ScaleMode.cs" />
+    <Compile Include="ShapeDrawCall.cs" />
+    <Compile Include="ShapeDrawState.cs" />
+    <Compile Include="ShapeFill.cs" />
+    <Compile Include="ShapeFillExtensions.cs" />
+    <Compile Include="ShapeGroup.cs" />
+    <Compile Include="ShapeRenderer.cs" />
+    <Compile Include="ShapeRendererFillable.cs" />
+    <Compile Include="ShapesAssets.cs" />
+    <Compile Include="ShapesBlendMode.cs" />
+    <Compile Include="ShapesColorFieldAttribute.cs" />
+    <Compile Include="ShapesConfig.cs" />
+    <Compile Include="ShapesExtensions.cs" />
+    <Compile Include="ShapesIO.cs" />
+    <Compile Include="ShapesMaterials.cs" />
+    <Compile Include="ShapesMaterialUtils.cs" />
+    <Compile Include="ShapesMath.cs" />
+    <Compile Include="ShapesMeshGen.cs" />
+    <Compile Include="ShapesMeshUtils.cs" />
+    <Compile Include="ShapesTextDrawer.cs" />
+    <Compile Include="Sphere.cs" />
+    <Compile Include="StateStack.cs" />
+    <Compile Include="StyleStack.cs" />
+    <Compile Include="TextAlign.cs" />
+    <Compile Include="TextAlignExtensions.cs" />
+    <Compile Include="ThicknessSpace.cs" />
+    <Compile Include="Torus.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="UnityInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C62DF1A-663D-4697-9E83-6042CBEAFD62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ink</RootNamespace>
+    <AssemblyName>Ink-Libraries</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\netstandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharacterRange.cs" />
+    <Compile Include="CharacterSet.cs" />
+    <Compile Include="CommandLineInput.cs" />
+    <Compile Include="CommentEliminator.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="DefaultFileHandler.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="ErrorType.cs" />
+    <Compile Include="IFileHandler.cs" />
+    <Compile Include="InkParser.cs" />
+    <Compile Include="InkStringConversionExtensions.cs" />
+    <Compile Include="IPlugin.cs" />
+    <Compile Include="Parsed\AuthorWarning.cs" />
+    <Compile Include="Parsed\BinaryExpression.cs" />
+    <Compile Include="Parsed\Choice.cs" />
+    <Compile Include="Parsed\Conditional.cs" />
+    <Compile Include="Parsed\ConditionalSingleBranch.cs" />
+    <Compile Include="Parsed\ConstantDeclaration.cs" />
+    <Compile Include="Parsed\ContentList.cs" />
+    <Compile Include="Parsed\Divert.cs" />
+    <Compile Include="Parsed\DivertTarget.cs" />
+    <Compile Include="Parsed\Expression.cs" />
+    <Compile Include="Parsed\ExternalDeclaration.cs" />
+    <Compile Include="Parsed\FlowBase.cs" />
+    <Compile Include="Parsed\FlowLevel.cs" />
+    <Compile Include="Parsed\FunctionCall.cs" />
+    <Compile Include="Parsed\Gather.cs" />
+    <Compile Include="Parsed\Glue.cs" />
+    <Compile Include="Parsed\Identifier.cs" />
+    <Compile Include="Parsed\INamedContent.cs" />
+    <Compile Include="Parsed\IncDecExpression.cs" />
+    <Compile Include="Parsed\IncludedFile.cs" />
+    <Compile Include="Parsed\IWeavePoint.cs" />
+    <Compile Include="Parsed\Knot.cs" />
+    <Compile Include="Parsed\List.cs" />
+    <Compile Include="Parsed\ListDefinition.cs" />
+    <Compile Include="Parsed\ListElementDefinition.cs" />
+    <Compile Include="Parsed\MultipleConditionExpression.cs" />
+    <Compile Include="Parsed\Number.cs" />
+    <Compile Include="Parsed\Object.cs" />
+    <Compile Include="Parsed\Path.cs" />
+    <Compile Include="Parsed\Return.cs" />
+    <Compile Include="Parsed\Sequence.cs" />
+    <Compile Include="Parsed\SequenceType.cs" />
+    <Compile Include="Parsed\Stitch.cs" />
+    <Compile Include="Parsed\Story.cs" />
+    <Compile Include="Parsed\StringExpression.cs" />
+    <Compile Include="Parsed\Tag.cs" />
+    <Compile Include="Parsed\Text.cs" />
+    <Compile Include="Parsed\TunnelOnwards.cs" />
+    <Compile Include="Parsed\UnaryExpression.cs" />
+    <Compile Include="Parsed\VariableAssignment.cs" />
+    <Compile Include="Parsed\VariableReference.cs" />
+    <Compile Include="Parsed\Weave.cs" />
+    <Compile Include="Parsed\Wrap.cs" />
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\BoolValue.cs" />
+    <Compile Include="Runtime\CallStack.cs" />
+    <Compile Include="Runtime\Choice.cs" />
+    <Compile Include="Runtime\ChoicePoint.cs" />
+    <Compile Include="Runtime\Container.cs" />
+    <Compile Include="Runtime\ControlCommand.cs" />
+    <Compile Include="Runtime\DebugMetadata.cs" />
+    <Compile Include="Runtime\Divert.cs" />
+    <Compile Include="Runtime\DivertTargetValue.cs" />
+    <Compile Include="Runtime\FloatValue.cs" />
+    <Compile Include="Runtime\Flow.cs" />
+    <Compile Include="Runtime\Glue.cs" />
+    <Compile Include="Runtime\INamedContent.cs" />
+    <Compile Include="Runtime\InkList.cs" />
+    <Compile Include="Runtime\InkListItem.cs" />
+    <Compile Include="Runtime\IntValue.cs" />
+    <Compile Include="Runtime\Json.cs" />
+    <Compile Include="Runtime\ListDefinition.cs" />
+    <Compile Include="Runtime\ListDefinitionsOrigin.cs" />
+    <Compile Include="Runtime\ListValue.cs" />
+    <Compile Include="Runtime\NativeFunctionCall.cs" />
+    <Compile Include="Runtime\Object.cs" />
+    <Compile Include="Runtime\Path.cs" />
+    <Compile Include="Runtime\Pointer.cs" />
+    <Compile Include="Runtime\ProfileNode.cs" />
+    <Compile Include="Runtime\Profiler.cs" />
+    <Compile Include="Runtime\PushPopType.cs" />
+    <Compile Include="Runtime\SearchResult.cs" />
+    <Compile Include="Runtime\SimpleJson.cs" />
+    <Compile Include="Runtime\StatePatch.cs" />
+    <Compile Include="Runtime\Story.cs" />
+    <Compile Include="Runtime\StoryException.cs" />
+    <Compile Include="Runtime\StoryState.cs" />
+    <Compile Include="Runtime\StringExt.cs" />
+    <Compile Include="Runtime\StringValue.cs" />
+    <Compile Include="Runtime\Tag.cs" />
+    <Compile Include="Runtime\Value.2.cs" />
+    <Compile Include="Runtime\Value.cs" />
+    <Compile Include="Runtime\ValueType.cs" />
+    <Compile Include="Runtime\VariableAssignment.cs" />
+    <Compile Include="Runtime\VariablePointerValue.cs" />
+    <Compile Include="Runtime\VariableReference.cs" />
+    <Compile Include="Runtime\VariablesState.cs" />
+    <Compile Include="Runtime\Void.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="StringParser.cs" />
+    <Compile Include="StringParserState.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

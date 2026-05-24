@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95556939-2C5F-4CEF-94E2-C1C0943514F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyButtons">
+      <HintPath>..\..\..\EasyButtons.dll</HintPath>
+    </Reference>
+    <Reference Include="Ink-Libraries">
+      <HintPath>..\..\..\Ink-Libraries.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\..\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievement.cs" />
+    <Compile Include="AchievementsManager.cs" />
+    <Compile Include="ActionIcon\ActionIconBackground.cs" />
+    <Compile Include="ActionIcon\ActionIconControllerType.cs" />
+    <Compile Include="ActionIcon\ActionIconDatabase.cs" />
+    <Compile Include="ActionIcon\ActionIconUtils.cs" />
+    <Compile Include="ActionIcon\ActionIconView.cs" />
+    <Compile Include="ActionIcon\ActionIconViewData.cs" />
+    <Compile Include="ActionIcon\ActionIconViewDataTween.cs" />
+    <Compile Include="ActionIcon\BackgroundType.cs" />
+    <Compile Include="ActionIcon\IconVariant.cs" />
+    <Compile Include="ActionSetsManager.cs" />
+    <Compile Include="Alignment.cs" />
+    <Compile Include="AmbientAudioSource.cs" />
+    <Compile Include="AnimatedTextView.cs" />
+    <Compile Include="AnimatedTextViewSettings.cs" />
+    <Compile Include="AnimationCurveX.cs" />
+    <Compile Include="AnimSettings.cs" />
+    <Compile Include="AssetSaverAttribute.cs" />
+    <Compile Include="AttractDotSettings.cs" />
+    <Compile Include="AudioClipSet.cs" />
+    <Compile Include="AudioController.cs" />
+    <Compile Include="AudioInstruction.cs" />
+    <Compile Include="AudioSnapshotZone.cs" />
+    <Compile Include="AudioSourceAutoDestroy.cs" />
+    <Compile Include="AudioUtils.cs" />
+    <Compile Include="AutoIcon.cs" />
+    <Compile Include="AvailableHeal.cs" />
+    <Compile Include="BackgroundClouds.cs" />
+    <Compile Include="BackPromptUI.cs" />
+    <Compile Include="Bake.cs" />
+    <Compile Include="BalancePoint.cs" />
+    <Compile Include="BalanceSettings.cs" />
+    <Compile Include="BaseChoiceInstruction.cs" />
+    <Compile Include="BaseContentInstruction.cs" />
+    <Compile Include="BaseInstruction.cs" />
+    <Compile Include="BasePolyAndSlope.cs" />
+    <Compile Include="BaseTimedVibration.cs" />
+    <Compile Include="BeatTrack.cs" />
+    <Compile Include="BeatTrackSection.cs" />
+    <Compile Include="BellyWriggleEnd.cs" />
+    <Compile Include="BellyWriggleSettings.cs" />
+    <Compile Include="BetweenLayersSeparator.cs" />
+    <Compile Include="BetweenLayersSeparatorSettings.cs" />
+    <Compile Include="Bezier.cs" />
+    <Compile Include="BezierPath.cs" />
+    <Compile Include="BezierSimple.cs" />
+    <Compile Include="BinarySearch.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="BlackBars.cs" />
+    <Compile Include="BlackBarsReason.cs" />
+    <Compile Include="Blackout.cs" />
+    <Compile Include="BlurEffect.cs" />
+    <Compile Include="BlurEffectSettings.cs" />
+    <Compile Include="Boat.cs" />
+    <Compile Include="BoundingSphere.cs" />
+    <Compile Include="BoundsX.cs" />
+    <Compile Include="BreathingSFXSettings.cs" />
+    <Compile Include="Bucketer.cs" />
+    <Compile Include="Build.cs" />
+    <Compile Include="BuildSetup.cs" />
+    <Compile Include="BuildSetupManager.cs" />
+    <Compile Include="ButtonPrompt.cs" />
+    <Compile Include="ButtonPromptSettings.cs" />
+    <Compile Include="CameraCopier.cs" />
+    <Compile Include="CameraProperties.cs" />
+    <Compile Include="CameraPropertiesBuilderQueue.cs" />
+    <Compile Include="CameraPropertiesModifier.cs" />
+    <Compile Include="CameraPushVolume.cs" />
+    <Compile Include="CameraShake.cs" />
+    <Compile Include="CameraShakeDatabase.cs" />
+    <Compile Include="CameraShakeName.cs" />
+    <Compile Include="CameraShotGeneratorProperties.cs" />
+    <Compile Include="CameraShotGeneratorTools.cs" />
+    <Compile Include="CameraShotTools.cs" />
+    <Compile Include="CameraVolume.cs" />
+    <Compile Include="CameraX.cs" />
+    <Compile Include="CanvasGroupOpacityInteractionEnabler.cs" />
+    <Compile Include="CanvasGroupX.cs" />
+    <Compile Include="CaughtCameraSettings.cs" />
+    <Compile Include="CaveLighting.cs" />
+    <Compile Include="CaveRegion.cs" />
+    <Compile Include="CelestialBody.cs" />
+    <Compile Include="ChoiceIcon.cs" />
+    <Compile Include="ChoicesWidget.cs" />
+    <Compile Include="ChoicesWidgetChoice.cs" />
+    <Compile Include="ChoicesWidgetSettings.cs" />
+    <Compile Include="Chunk.cs" />
+    <Compile Include="ChunkAlignMode.cs" />
+    <Compile Include="ChunkAlignSettings.cs" />
+    <Compile Include="ChunkGapHint.cs" />
+    <Compile Include="ChunkStartEnd.cs" />
+    <Compile Include="Climbable.cs" />
+    <Compile Include="ClimbCheckRange.cs" />
+    <Compile Include="ClimbPrompt.cs" />
+    <Compile Include="ClimbSettings.cs" />
+    <Compile Include="Cloud.cs" />
+    <Compile Include="CloudGroup.cs" />
+    <Compile Include="CloudGroupSettings.cs" />
+    <Compile Include="Cloudiness.cs" />
+    <Compile Include="Cloudscape.cs" />
+    <Compile Include="CloudscapeSettings.cs" />
+    <Compile Include="CloudscapeTexture.cs" />
+    <Compile Include="CloudSpriteSet.cs" />
+    <Compile Include="CLZF2.cs" />
+    <Compile Include="ColorX.cs" />
+    <Compile Include="ComponentMenuX.cs" />
+    <Compile Include="ContentInstruction.cs" />
+    <Compile Include="Creature.cs" />
+    <Compile Include="CreatureEntry.cs" />
+    <Compile Include="CreatureEntryType.cs" />
+    <Compile Include="CreatureExit.cs" />
+    <Compile Include="CreatureExitCondition.cs" />
+    <Compile Include="CreatureExitType.cs" />
+    <Compile Include="CreatureSettings.cs" />
+    <Compile Include="CreatureZone.cs" />
+    <Compile Include="Credits.cs" />
+    <Compile Include="CreditsContext.cs" />
+    <Compile Include="CreditsSettings.cs" />
+    <Compile Include="Crow.cs" />
+    <Compile Include="CrowHit.cs" />
+    <Compile Include="CurrentMomentValidator.cs" />
+    <Compile Include="CurrentVersionSO.cs" />
+    <Compile Include="Damage.cs" />
+    <Compile Include="DamageType.cs" />
+    <Compile Include="DebugDrawBeatTrack.cs" />
+    <Compile Include="DebuggingInstruction.cs" />
+    <Compile Include="DebugLogInstruction.cs" />
+    <Compile Include="DebugOptions.cs" />
+    <Compile Include="DebugOptionsData.cs" />
+    <Compile Include="DebugX.cs" />
+    <Compile Include="DemoInactivityReset.cs" />
+    <Compile Include="Dialogue.cs" />
+    <Compile Include="DialogueBubbleSettings.cs" />
+    <Compile Include="DialogueBubbleView.cs" />
+    <Compile Include="DialogueButton.cs" />
+    <Compile Include="DialogueButtonSettings.cs" />
+    <Compile Include="DialogueChoiceInstruction.cs" />
+    <Compile Include="DirectoryX.cs" />
+    <Compile Include="DisableAttribute.cs" />
+    <Compile Include="DiscoveryCondition.cs" />
+    <Compile Include="DoubleSyncTrack.cs" />
+    <Compile Include="DynamicProp.cs" />
+    <Compile Include="Eagle.cs" />
+    <Compile Include="EagleSettings.cs" />
+    <Compile Include="EasingFunction.cs" />
+    <Compile Include="EasyButtons\Example\ButtonsExample.cs" />
+    <Compile Include="EasyButtons\Example\CustomEditorButtonsExample.cs" />
+    <Compile Include="EasyButtons\Example\ScriptableObjectExample.cs" />
+    <Compile Include="EditorApplicationX.cs" />
+    <Compile Include="EditSettings.cs" />
+    <Compile Include="EnumButtonGroupAttribute.cs" />
+    <Compile Include="EnumFlagAttribute.cs" />
+    <Compile Include="EnumFlagsButtonGroupAttribute.cs" />
+    <Compile Include="ExplosionSettings.cs" />
+    <Compile Include="ExtendedButton.cs" />
+    <Compile Include="ExtendedSelectable.cs" />
+    <Compile Include="FadeSeparator.cs" />
+    <Compile Include="FallSettings.cs" />
+    <Compile Include="FeedbackController.cs" />
+    <Compile Include="FeedbackSettings.cs" />
+    <Compile Include="FilePathAttribute.cs" />
+    <Compile Include="FinalJumpSettings.cs" />
+    <Compile Include="FinalJumpZone.cs" />
+    <Compile Include="FlagsX.cs" />
+    <Compile Include="FlattenSplats.cs" />
+    <Compile Include="Flock.cs" />
+    <Compile Include="FolderPathAttribute.cs" />
+    <Compile Include="FollowPathCameraSettings.cs" />
+    <Compile Include="FollowTransform.cs" />
+    <Compile Include="FootstepAudioClipDatabase.cs" />
+    <Compile Include="FootstepAudioClipSet.cs" />
+    <Compile Include="FootstepAudioManager.cs" />
+    <Compile Include="FootstepSFXSettings.cs" />
+    <Compile Include="FPSDebugSettings.cs" />
+    <Compile Include="FPSManager.cs" />
+    <Compile Include="FPSSettings.cs" />
+    <Compile Include="FrameAnimation.cs" />
+    <Compile Include="FrameAnimator.cs" />
+    <Compile Include="FreeCameraStateSettings.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameCamera.cs" />
+    <Compile Include="GameCameraSettings.cs" />
+    <Compile Include="GameChoice.cs" />
+    <Compile Include="GameChoiceSpecialType.cs" />
+    <Compile Include="GameChoiceType.cs" />
+    <Compile Include="GameClock.cs" />
+    <Compile Include="GameClockSettings.cs" />
+    <Compile Include="GameEditorUtils.cs" />
+    <Compile Include="GameInput.cs" />
+    <Compile Include="GameInputMapping.cs" />
+    <Compile Include="GameObjectTrigger.cs" />
+    <Compile Include="GameSetup.cs" />
+    <Compile Include="GameSetupManager.cs" />
+    <Compile Include="GameUI.cs" />
+    <Compile Include="GameUISettings.cs" />
+    <Compile Include="GeneralSplashParticles.cs" />
+    <Compile Include="GenericChoiceInstruction.cs" />
+    <Compile Include="GizmosX.cs" />
+    <Compile Include="GlobalShaderParamSetter.cs" />
+    <Compile Include="GodRayParticles.cs" />
+    <Compile Include="GodRayParticlesManager.cs" />
+    <Compile Include="Goshawk.cs" />
+    <Compile Include="GSR.cs" />
+    <Compile Include="GUIGraph.cs" />
+    <Compile Include="Health.cs" />
+    <Compile Include="HealthEffect.cs" />
+    <Compile Include="HealthInstruction.cs" />
+    <Compile Include="HealthSettings.cs" />
+    <Compile Include="HealthUI.cs" />
+    <Compile Include="HealthUISettings.cs" />
+    <Compile Include="HideReason.cs" />
+    <Compile Include="HighlandCameraProperties.cs" />
+    <Compile Include="HighlandCameraPropertiesModifier.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="HorizonSoftener.cs" />
+    <Compile Include="HorizontalWiggleAnim.cs" />
+    <Compile Include="HurtFlash.cs" />
+    <Compile Include="IEnumerableX.cs" />
+    <Compile Include="InfoAttribute.cs" />
+    <Compile Include="InkAnimation.cs" />
+    <Compile Include="InkInstructionParserUtility.cs" />
+    <Compile Include="InkListChangeHandler.cs" />
+    <Compile Include="InkStylingUtility.cs" />
+    <Compile Include="InkWalker.cs" />
+    <Compile Include="InputTypeEnabler.cs" />
+    <Compile Include="InputVibration.cs" />
+    <Compile Include="InputVibrationLibrary.cs" />
+    <Compile Include="InputVibrationTest.cs" />
+    <Compile Include="Insets.cs" />
+    <Compile Include="IntroCameraKeyframe.cs" />
+    <Compile Include="IntroCameraSettings.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="InvisibleCollision.cs" />
+    <Compile Include="JournalContentBuffer.cs" />
+    <Compile Include="JournalController.cs" />
+    <Compile Include="JournalInkContentCache.cs" />
+    <Compile Include="JournalItemView.cs" />
+    <Compile Include="JournalPage.cs" />
+    <Compile Include="JournalPrompt.cs" />
+    <Compile Include="JournalSection.cs" />
+    <Compile Include="JournalSettings.cs" />
+    <Compile Include="JumpSettings.cs" />
+    <Compile Include="JumpSFXSettings.cs" />
+    <Compile Include="KeyboardActionIconSet.cs" />
+    <Compile Include="KnotRunner.cs" />
+    <Compile Include="Knowledge.cs" />
+    <Compile Include="LatencyCalibrator.cs" />
+    <Compile Include="LatencyCalibratorSettings.cs" />
+    <Compile Include="Launcher.cs" />
+    <Compile Include="LaunchMode.cs" />
+    <Compile Include="LayerSettings.cs" />
+    <Compile Include="LegacyInstruction.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelSection.cs" />
+    <Compile Include="LighthouseLight.cs" />
+    <Compile Include="LighthouseLightSettings.cs" />
+    <Compile Include="LightningEffectsController.cs" />
+    <Compile Include="LightningEffectsControllerSettings.cs" />
+    <Compile Include="LightRays2D.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="Line3D.cs" />
+    <Compile Include="LineBreaker.cs" />
+    <Compile Include="ListX.cs" />
+    <Compile Include="LitParticles.cs" />
+    <Compile Include="LitPeakRing.cs" />
+    <Compile Include="LODItem.cs" />
+    <Compile Include="LODLevel.cs" />
+    <Compile Include="LookFurtherPrompt.cs" />
+    <Compile Include="LookFurtherVignette.cs" />
+    <Compile Include="LookPromptUI.cs" />
+    <Compile Include="LookPromptUISettings.cs" />
+    <Compile Include="LowQualityWaterZone.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapMarker.cs" />
+    <Compile Include="MapMarkerWorld.cs" />
+    <Compile Include="MapsViewController.cs" />
+    <Compile Include="MapsViewSettings.cs" />
+    <Compile Include="MapView.cs" />
+    <Compile Include="MarkerState.cs" />
+    <Compile Include="MaxZoom.cs" />
+    <Compile Include="MediaPlayInstruction.cs" />
+    <Compile Include="MeshSortingOrder.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MonoInstancer.cs" />
+    <Compile Include="MonoSingleton.cs" />
+    <Compile Include="MouseActionIconSet.cs" />
+    <Compile Include="MusicalTrail.cs" />
+    <Compile Include="MusicalTrailSettings.cs" />
+    <Compile Include="MusicControlPoint.cs" />
+    <Compile Include="MusicEditor.cs" />
+    <Compile Include="MusicEditorAssets.cs" />
+    <Compile Include="MusicGameAudioClip.cs" />
+    <Compile Include="MusicLibrary.cs" />
+    <Compile Include="MusicRun.cs" />
+    <Compile Include="MusicRunFlock.cs" />
+    <Compile Include="MusicSettings.cs" />
+    <Compile Include="MusicType.cs" />
+    <Compile Include="NaN.cs" />
+    <Compile Include="Narrative.cs" />
+    <Compile Include="NarrativeChoicesWidget.cs" />
+    <Compile Include="NarrativePresenter.cs" />
+    <Compile Include="NarrativePresenterSettings.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="Notifications.cs" />
+    <Compile Include="NotificationsSettings.cs" />
+    <Compile Include="NotificationType.cs" />
+    <Compile Include="NowPlaying.cs" />
+    <Compile Include="NowPlayingSettings.cs" />
+    <Compile Include="ObstaclePlacement.cs" />
+    <Compile Include="Obstacles.cs" />
+    <Compile Include="ObstacleType.cs" />
+    <Compile Include="OnwardPromptUI.cs" />
+    <Compile Include="OpeningQuote.cs" />
+    <Compile Include="PanArrowsUI.cs" />
+    <Compile Include="Parabola.cs" />
+    <Compile Include="ParticleLOD.cs" />
+    <Compile Include="ParticlesX.cs" />
+    <Compile Include="ParticleSystemAlphaController.cs" />
+    <Compile Include="ParticleSystemAutoDestroy.cs" />
+    <Compile Include="PathDestination.cs" />
+    <Compile Include="PathX.cs" />
+    <Compile Include="PatternOptional.cs" />
+    <Compile Include="PauseInstruction.cs" />
+    <Compile Include="PeakClimbedBanner.cs" />
+    <Compile Include="PeakClimbedBannerSettings.cs" />
+    <Compile Include="PeakIconDatabase.cs" />
+    <Compile Include="PeakScalingGroup.cs" />
+    <Compile Include="PeakStateAudioController.cs" />
+    <Compile Include="PeakStateAudioControllerSettings.cs" />
+    <Compile Include="PeakStateController.cs" />
+    <Compile Include="PeakStateSettings.cs" />
+    <Compile Include="PeakViewExtentOverride.cs" />
+    <Compile Include="PeakWidget.cs" />
+    <Compile Include="PeakWidgetController.cs" />
+    <Compile Include="PhotoMode.cs" />
+    <Compile Include="PhotoModeSettings.cs" />
+    <Compile Include="PlaneMeshGenerator.cs" />
+    <Compile Include="PlatformActionIcon.cs" />
+    <Compile Include="PlatformActionIconSet.cs" />
+    <Compile Include="PlayerControlDisableReason.cs" />
+    <Compile Include="PlayerPrefsX.cs" />
+    <Compile Include="PlayerStateIconsUI.cs" />
+    <Compile Include="Poly.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="PolySimulate.cs" />
+    <Compile Include="PostProcessDepthGreyscale.cs" />
+    <Compile Include="Presume.cs" />
+    <Compile Include="PreviewTextureAttribute.cs" />
+    <Compile Include="ProgressBanner.cs" />
+    <Compile Include="ProgressBannerSettings.cs" />
+    <Compile Include="PromptWithVisibility.cs" />
+    <Compile Include="Prop.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropIcon.cs" />
+    <Compile Include="PropsController.cs" />
+    <Compile Include="PropWidget.cs" />
+    <Compile Include="Prototype.cs" />
+    <Compile Include="QuickButtonPrompt.cs" />
+    <Compile Include="RainAudio.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="Raycast.cs" />
+    <Compile Include="ReadyToSprintUI.cs" />
+    <Compile Include="RectX.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="RemarkBlocker.cs" />
+    <Compile Include="ResolutionMode.cs" />
+    <Compile Include="RestAvailability.cs" />
+    <Compile Include="RestPromptUI.cs" />
+    <Compile Include="RestStateController.cs" />
+    <Compile Include="RestWidget.cs" />
+    <Compile Include="RhythmActionMarker.cs" />
+    <Compile Include="RhythmActionMarkerPrompt.cs" />
+    <Compile Include="RhythmActionMarkerSettings.cs" />
+    <Compile Include="RhythmVibration.cs" />
+    <Compile Include="RhythmVibrationSettings.cs" />
+    <Compile Include="Rope.cs" />
+    <Compile Include="RoundRect.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="RouteEditHint.cs" />
+    <Compile Include="RouteVisualiser.cs" />
+    <Compile Include="RouteVisualiserSettings.cs" />
+    <Compile Include="Runner.cs" />
+    <Compile Include="RunnerAudioManager.cs" />
+    <Compile Include="RunnerBreathVFX.cs" />
+    <Compile Include="RunnerFootstepVFX.cs" />
+    <Compile Include="RunnerSettings.cs" />
+    <Compile Include="RunnerSingletonApplier.cs" />
+    <Compile Include="RunPredictHint.cs" />
+    <Compile Include="RunSettings.cs" />
+    <Compile Include="RunTrack.cs" />
+    <Compile Include="RunTrackSettings.cs" />
+    <Compile Include="SAnimatedCustomProperty.cs" />
+    <Compile Include="SAnimatedProperty.2.cs" />
+    <Compile Include="SAnimatedProperty.cs" />
+    <Compile Include="SaveInfo.cs" />
+    <Compile Include="SaveLoadManager.cs" />
+    <Compile Include="SaveLoadType.cs" />
+    <Compile Include="SaveMetaInformation.cs" />
+    <Compile Include="SaveState.cs" />
+    <Compile Include="SaveVersion.cs" />
+    <Compile Include="SceneAttribute.cs" />
+    <Compile Include="SceneExample.cs" />
+    <Compile Include="ScenePathAttribute.cs" />
+    <Compile Include="ScenePathExample.cs" />
+    <Compile Include="Scenery.cs" />
+    <Compile Include="SceneViewUtility.cs" />
+    <Compile Include="Seal.cs" />
+    <Compile Include="SealSettings.cs" />
+    <Compile Include="SelectionX.cs" />
+    <Compile Include="SerializableCamera.cs" />
+    <Compile Include="SerializableTransform.cs" />
+    <Compile Include="SerializedHistory.cs" />
+    <Compile Include="SerializedScriptableSingleton.cs" />
+    <Compile Include="SetPropertyUtility.cs" />
+    <Compile Include="SettingButton.cs" />
+    <Compile Include="SettingButtonWithLabels.cs" />
+    <Compile Include="SettingControl.2.cs" />
+    <Compile Include="SettingControl.cs" />
+    <Compile Include="SettingControlSettings.cs" />
+    <Compile Include="SettingKeyAssign.cs" />
+    <Compile Include="SettingPicker.cs" />
+    <Compile Include="SettingSlider.cs" />
+    <Compile Include="SettingsScreen.cs" />
+    <Compile Include="SettingsScreenSettings.cs" />
+    <Compile Include="SettingToggle.cs" />
+    <Compile Include="ShelterProtectionStrength.cs" />
+    <Compile Include="ShuffleBag.cs" />
+    <Compile Include="Simulate.cs" />
+    <Compile Include="SkiLift.cs" />
+    <Compile Include="SkiLiftChair.cs" />
+    <Compile Include="SkiLiftSettings.cs" />
+    <Compile Include="SkyColourStop.cs" />
+    <Compile Include="SLayout.cs" />
+    <Compile Include="SLayoutAngleProperty.cs" />
+    <Compile Include="SLayoutAnimation.cs" />
+    <Compile Include="SLayoutAnimator.cs" />
+    <Compile Include="SLayoutCanvasTimeScalar.cs" />
+    <Compile Include="SLayoutColorProperty.cs" />
+    <Compile Include="SLayoutFloatProperty.cs" />
+    <Compile Include="SLayoutProperty.cs" />
+    <Compile Include="SleepGlow.cs" />
+    <Compile Include="Slideable.cs" />
+    <Compile Include="Slope.cs" />
+    <Compile Include="SlopeFactory.cs" />
+    <Compile Include="SlopeSample.cs" />
+    <Compile Include="SlowdownTrigger.cs" />
+    <Compile Include="SoundEffect.cs" />
+    <Compile Include="SoundEffects.cs" />
+    <Compile Include="SpawnPoint.cs" />
+    <Compile Include="SplashSequence.cs" />
+    <Compile Include="Splat.cs" />
+    <Compile Include="SplatAnalysis.cs" />
+    <Compile Include="SplatAndPolyUpdater.cs" />
+    <Compile Include="SplineSystem\OnSplineChangeEvent.cs" />
+    <Compile Include="SplineSystem\Spline.cs" />
+    <Compile Include="SplineSystem\SplineBezierControlPoint.cs" />
+    <Compile Include="SplineSystem\SplineBezierCurve.cs" />
+    <Compile Include="SplineSystem\SplineBezierPoint.cs" />
+    <Compile Include="SpringDamper.cs" />
+    <Compile Include="SpriteTrail.cs" />
+    <Compile Include="StaminaEdgeVignette.cs" />
+    <Compile Include="StaminaSettings.cs" />
+    <Compile Include="StateFuncMachine.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="SteamStatsAndAchievements.cs" />
+    <Compile Include="Sting.cs" />
+    <Compile Include="Stings.cs" />
+    <Compile Include="StoneSkimmingSettings.cs" />
+    <Compile Include="StopwatchX.cs" />
+    <Compile Include="StoryCharacter.cs" />
+    <Compile Include="StoryUtils.cs" />
+    <Compile Include="SuccessNote.cs" />
+    <Compile Include="SunClock.cs" />
+    <Compile Include="SunClockSettings.cs" />
+    <Compile Include="SurfaceType.cs" />
+    <Compile Include="SurfaceTypeSampler.cs" />
+    <Compile Include="SurfaceTypeUtils.cs" />
+    <Compile Include="SwitchManager.cs" />
+    <Compile Include="SwitchSaving.cs" />
+    <Compile Include="SwitchVibrationManager.cs" />
+    <Compile Include="SystemInfoX.cs" />
+    <Compile Include="SystemX.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="Temperature.cs" />
+    <Compile Include="TemperatureSettings.cs" />
+    <Compile Include="TestMenu.cs" />
+    <Compile Include="TextMeshProUtils.cs" />
+    <Compile Include="TextReadSettings.cs" />
+    <Compile Include="ThemeStop.cs" />
+    <Compile Include="ThrowPrompt.cs" />
+    <Compile Include="TimedVibration.cs" />
+    <Compile Include="TimedVibrationCurve.cs" />
+    <Compile Include="TimeOfDayEffects.cs" />
+    <Compile Include="TimeOfDayPicker.cs" />
+    <Compile Include="TimeOfDaySettings.cs" />
+    <Compile Include="TimeOfDayTheme.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="TimeX.cs" />
+    <Compile Include="TitleScreen.cs" />
+    <Compile Include="TitleScreenSettings.cs" />
+    <Compile Include="Torch.cs" />
+    <Compile Include="TorchSettings.cs" />
+    <Compile Include="TrackBuilder.cs" />
+    <Compile Include="TrackBuilderSettings.cs" />
+    <Compile Include="TrackPosition.cs" />
+    <Compile Include="TransformToFillCameraFrustrum.cs" />
+    <Compile Include="TransformX.cs" />
+    <Compile Include="TransitionSettings.cs" />
+    <Compile Include="Triangulator.cs" />
+    <Compile Include="TriggerFlags.cs" />
+    <Compile Include="TriggerZone.cs" />
+    <Compile Include="TripHazard.cs" />
+    <Compile Include="Tutorial.cs" />
+    <Compile Include="TutorialId.cs" />
+    <Compile Include="TutorialSettings.cs" />
+    <Compile Include="TutorialTrigger.cs" />
+    <Compile Include="TweenProperties.cs" />
+    <Compile Include="Twinkle.cs" />
+    <Compile Include="TwinkleSettings.cs" />
+    <Compile Include="TwinkleUI.cs" />
+    <Compile Include="TypeTween.cs" />
+    <Compile Include="UIGradient.cs" />
+    <Compile Include="UILineRenderer.cs" />
+    <Compile Include="UIPrimitiveBase.cs" />
+    <Compile Include="UISound.cs" />
+    <Compile Include="UISounds.cs" />
+    <Compile Include="UnityX\Editor\Icon\Icon.cs" />
+    <Compile Include="UnityX\Editor\Icon\IconManager.cs" />
+    <Compile Include="UnityX\Editor\Icon\LabelIcon.cs" />
+    <Compile Include="UnityX\Geometry\Line.cs" />
+    <Compile Include="UnityX\Geometry\Triangle.cs" />
+    <Compile Include="UnityX\MeshBuilder\AddPlaneParams.cs" />
+    <Compile Include="UnityX\MeshBuilder\AddTriangleParams.cs" />
+    <Compile Include="UnityX\MeshBuilder\MeshBakeParams.cs" />
+    <Compile Include="UnityX\MeshBuilder\MeshBuilder.cs" />
+    <Compile Include="UpAndOverSettings.cs" />
+    <Compile Include="UpscaleTools.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Version.cs" />
+    <Compile Include="VersionControlX.cs" />
+    <Compile Include="VibrationDatabase.cs" />
+    <Compile Include="VibrationMoment.cs" />
+    <Compile Include="Vocalisation.cs" />
+    <Compile Include="Vocalisations.cs" />
+    <Compile Include="WallSlideSettings.cs" />
+    <Compile Include="WaterCamera.cs" />
+    <Compile Include="WaterCameraSettings.cs" />
+    <Compile Include="WaterImpact.cs" />
+    <Compile Include="WaterPlane.cs" />
+    <Compile Include="WaterReflectionGrab.cs" />
+    <Compile Include="WaterRippleManager.cs" />
+    <Compile Include="WeatherHealthEffect.cs" />
+    <Compile Include="WeatherModifierZone.cs" />
+    <Compile Include="WeatherOverride.cs" />
+    <Compile Include="WeatherPattern.cs" />
+    <Compile Include="WeatherSystem.cs" />
+    <Compile Include="WeatherSystemSettings.cs" />
+    <Compile Include="WeatherType.cs" />
+    <Compile Include="WeightedBlends.cs" />
+    <Compile Include="WindAffectedParticleSystem.cs" />
+    <Compile Include="WindAudioManager.cs" />
+    <Compile Include="WindEffect.cs" />
+    <Compile Include="WindModifierZone.cs" />
+    <Compile Include="WindSettings.cs" />
+    <Compile Include="WindSystem.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="WorldManager.cs" />
+    <Compile Include="WorldSpaceUIElement.cs" />
+    <Compile Include="ZipLine.cs" />
+    <Compile Include="ZipLineSettings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
